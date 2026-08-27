@@ -1,12 +1,525 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My machines</title>
+
+    <title>GIT</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background-color: #161b22;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #0d1117;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        .meny {
+            background-color: #21262d;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .meny a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .meny a:hover {
+            color: #2f81f7;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .boks {
+            background-color: #21262d;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2f81f7;
+        }
+
+        .kommando {
+            background-color: #0d1117;
+            padding: 12px;
+            margin-top: 10px;
+            border-left: 4px solid #2f81f7;
+        }
+
+        .kommando p {
+            margin-bottom: 5px;
+        }
+
+        code {
+            background-color: #161b22;
+            padding: 5px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 700px;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .bilde {
+            border: 2px dashed gray;
+            padding: 40px;
+            text-align: center;
+            margin-top: 15px;
+            color: lightgray;
+        }
+
+        .farger {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .farge {
+            width: 180px;
+            padding: 30px 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .hovedfarge {
+            background-color: #161b22;
+            border: 1px solid white;
+        }
+
+        .tekstfarge {
+            background-color: #f0f6fc;
+            color: black;
+        }
+
+        .aksentfarge {
+            background-color: #2f81f7;
+        }
+
+        .wireframe {
+            border: 2px solid white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .wireboks {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #0d1117;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+
 </head>
+
 <body>
-    <h1>My machines</h1>
+
+<header>
+    <h1>GIT</h1>
+    <p>En enkel side om GIT, GitHub og GIT Bash</p>
+</header>
+
+<div class="meny">
+    <a href="">GIT</a>
+    <a href="">GitHub</a>
+    <a href="">GIT Bash</a>
+    <a href="">Kommandoer</a>
+    <a href="">VS Code</a>
+    <a href="">Markdown</a>
+</div>
+
+<main>
+
+ <div class="boks">
+
+     <h2>Hva er GIT?</h2>
+
+
+    <p>
+            GIT er et verktøy som brukes når man programmerer.
+            Det kan lagre forskjellige versjoner av et prosjekt.</p>
+
+
+            <p>
+            Hvis jeg gjør en feil i prosjektet mitt, kan jeg bruke GIT
+            for å finne en eldre versjon. </p>
+
+    <p> GIT er også nyttig når flere personer jobber på samme prosjekt.</p>
+
+    </div>
+     
+    <div class="boks">
+
+        <h2>Hva er GitHub?</h2>
+
+        <p>
+            GitHub er en nettside hvor man kan lagre prosjekter som bruker GIT. </p>
+
+        <p>
+            Man kan laste opp kode, dele prosjekter med andre og jobbe sammen.</p>
+
+            <p>Jeg kan for eksempel lage en nettside på PC-en min og laste
+            prosjektet opp til GitHub.</p>
+
+        <div class="bilde">
+            <img src="image/image.png" alt="GitHub">
+        </div>
+
+    </div>
+
+
+    <div class="boks">
+
+        <h2>Hva er GIT Bash?</h2>
+
+        <p>
+            GIT Bash er en terminal som kan brukes sammen med GIT. </p>
+
+        <p>
+            I GIT Bash skriver man kommandoer.
+            Man kan for eksempel gå mellom mapper, lage filer
+            og bruke GIT-kommandoer.</p>
+
+    </div>
+
+    <div class="boks">
+
+        <h2>Nyttige Bash-kommandoer</h2>
+
+        <div class="kommando">
+            <b>pwd</b>
+            <p>Viser hvilken mappe jeg er i.</p>
+        </div>
+
+        <div class="kommando">
+            <b>ls</b>
+            <p>Viser filer og mapper.</p>
+        </div>
+
+        <div class="kommando">
+            <b>cd</b>
+            <p>Brukes for å gå inn i en mappe.</p>
+
+            <code>cd prosjekt</code>
+        </div>
+
+
+        <div class="kommando">
+            <b>cd ..</b>
+            <p>Går tilbake én mappe.</p>
+        </div>
+
+
+        <div class="kommando">
+            <b>mkdir</b>
+            <p>Lager en ny mappe.</p>
+
+            <code>mkdir nettside</code>
+        </div>
+
+
+        <div class="kommando">
+            <b>touch</b>
+            <p>Lager en ny fil.</p>
+
+            <code>touch index.html</code>
+        </div>
+
+
+        <div class="kommando">
+            <b>clear</b>
+            <p>Rydder teksten i terminalen.</p>
+        </div>
+
+    </div>
+
+
+    <div class="boks">
+
+        <h2>Nyttige GIT-kommandoer</h2>
+
+
+        <div class="kommando">
+            <b>git init</b>
+
+            <p>
+                Starter GIT i prosjektet.
+            </p>
+        </div>
+
+
+        <div class="kommando">
+            <b>git status</b>
+
+            <p>
+                Viser hvilke filer som er endret.
+            </p>
+        </div>
+
+
+        <div class="kommando">
+            <b>git add .</b>
+
+            <p>
+                Legger til alle endringene.
+            </p>
+        </div>
+
+
+        <div class="kommando">
+            <b>git commit</b>
+
+            <p>
+                Lagrer en versjon av prosjektet.
+            </p>
+
+            <code>git commit -m "laget startside"</code>
+        </div>
+
+
+        <div class="kommando">
+            <b>git log</b>
+
+            <p>
+                Viser tidligere commits.
+            </p>
+        </div>
+
+
+        <div class="kommando">
+            <b>git clone</b>
+
+            <p>
+                Laster ned et prosjekt fra GitHub.
+            </p>
+        </div>
+
+
+        <div class="kommando">
+            <b>git push</b>
+
+            <p>
+                Sender endringene mine til GitHub. </p>
+        </div>
+
+
+        <div class="kommando">
+            <b>git pull</b>
+
+            <p>
+                Henter nye endringer fra GitHub. </p>
+        </div>
+
+    </div>
+
+
+    <div class="boks">
+
+        <h2>Bruk av GIT i VS Code</h2>
+
+        <p>
+            GIT kan brukes direkte i VS Code.ъ</p>
+
+        <p>
+            På venstre side i VS Code finnes Source Control.
+            Der kan jeg se hvilke filer jeg har endret.</p>
+
+        <p>
+            Jeg kan også skrive en melding og lage en commit.</p>
+
+        <p>
+            Det er også mulig å bruke terminalen i VS Code.</p>
+
+        <p>For eksempel</p>
+
+        <div class="kommando">
+
+            <p>git status</p>
+
+            <p>git add .</p>
+
+            <p>git commit -m "oppdatering"</p>
+
+            <p>git push</p>
+
+        </div>
+
+
+        <div class="bilde">
+            Skjermbilde av GIT i VS Code
+            <img src="image/vscode.png" alt="VS Code">
+        </div>
+
+    </div>
+
+
+    <div class="boks">
+
+        <h2>Hva er en .md-fil?</h2>
+
+        <p>
+            .md betyr Markdown.</p>
+
+        <p>
+            Markdown brukes ofte for å skrive informasjon om et prosjekt.</p>
+
+        <p>
+            På GitHub finner man ofte en fil som heter README.md.
+            Der kan man skrive hva prosjektet handler om.</p>
+
+
+        <h3>Eksempel på Markdown</h3>
+
+        <div class="kommando">
+
+            <p># Mitt prosjekt</p>
+
+            <p>Dette er mitt prosjekt.</p>
+
+            <p>## Programmer</p>
+
+            <p>- HTML</p>
+
+            <p>- CSS</p>
+
+            <p>- JavaScript</p>
+
+        </div>
+
+        <p>
+        kan brukes for overskrift.</p>
+
+        <p>
+            kan brukes for punktliste.</p>
+
+    </div>
+
+
+
+    <div class="boks">
+
+        <h2>Dokumentasjon</h2>
+
+        <h3>Wireframe</h3>
+
+        <p>
+            Før jeg begynte med siden lagde jeg en enkel wireframe.
+            Den viser hvordan jeg ville plassere innholdet på siden.
+        </p>
+
+
+        <div class="wireframe">
+
+            <div class="wireboks">
+                Header
+            </div>
+
+            <div class="wireboks">
+                Meny
+            </div>
+
+            <div class="wireboks">
+                Hva er GIT?
+            </div>
+
+            <div class="wireboks">
+                Hva er GitHub?
+            </div>
+
+            <div class="wireboks">
+                GIT Bash
+            </div>
+
+            <div class="wireboks">
+                Bash-kommandoer
+            </div>
+
+            <div class="wireboks">
+                GIT-kommandoer
+            </div>
+
+            <div class="wireboks">
+                GIT i VS Code
+            </div>
+
+            <div class="wireboks">
+                Markdown
+            </div>
+
+            <div class="wireboks">
+                Dokumentasjon
+            </div>
+
+        </div>
+
+
+        <h3>Fargepalett</h3>
+
+        <p>
+            Jeg valgte mørke farger fordi jeg synes det passer bra
+            til GIT og programmering. </p>
+
+
+        <div class="farger">
+
+            <div class="farge hovedfarge">
+                Hovedfarge
+                <br>
+                #161B22
+            </div>
+
+
+            <div class="farge tekstfarge">
+                Tekstfarge
+                <br>
+                #F0F6FC
+            </div>
+
+
+            <div class="farge aksentfarge">
+                Aksentfarge
+                <br>
+                #2F81F7
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    <p>GIT nettside</p> </footer>
 
 </body>
+
 </html>
